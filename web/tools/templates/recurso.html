@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="robots" content="noindex, nofollow">
+  <title>{{TITLE}}</title>
+  <!-- Tema inline ANTES del CSS para evitar el parpadeo -->
+  <script>
+    (function() {
+      try {
+        var theme = localStorage.getItem('docente:theme') || localStorage.getItem('luislab:theme') || 'auto';
+        var root = document.documentElement;
+        if (theme === 'dark' || (theme === 'auto' && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+          root.setAttribute('data-theme', 'dark');
+        } else {
+          root.setAttribute('data-theme', 'light');
+        }
+      } catch (e) {}
+    })();
+  </script>
+  <!-- Estilos compartidos (1 nivel arriba desde web/contenidos/) -->
+  <link rel="stylesheet" href="../shared/styles/study.css">
+  <style>
+    :root {
+      --subject-color: {{SUBJECT_COLOR}};
+      --subject-ink: {{SUBJECT_INK}};
+    }
+  </style>
+</head>
+<body>
+  <noscript><p style="padding:16px;text-align:center">Este recurso interactivo necesita JavaScript activado.</p></noscript>
+  <!-- Barra del sitio: migas de pan + botón de tema -->
+  <header class="sitebar">
+    <nav class="crumbs" aria-label="Ruta de navegación">
+      <a href="../index.html">Inicio</a><span class="crumbs__sep">/</span>
+      <span id="crumb-subject">Asignatura</span><span class="crumbs__sep">/</span>
+      <span id="crumb-current" aria-current="page">{{TITLE}}</span>
+    </nav>
+    <button id="theme-toggle" class="themebtn" type="button" aria-label="Cambiar tema" title="Cambiar tema">
+      <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+        <circle cx="12" cy="12" r="4"/>
+        <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+      </svg>
+      <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8Z"/>
+      </svg>
+    </button>
+  </header>
+  <div id="app"></div>
+  <!-- Datos del recurso (mismo directorio) -->
+  <script src="data-{{SLUG}}.js"></script>
+  <!-- Motor de estudio -->
+  <script src="../shared/scripts/study-engine.js"></script>
+  <!-- Tema compartido -->
+  <script src="../shared/scripts/theme.js"></script>
+  <!-- Rellena migas y botón de tema con los metadatos del recurso -->
+  <script>
+    (function () {
+      function initChrome() {
+        var meta = (window.STUDY_DATA && window.STUDY_DATA.meta) || {};
+        var subj = document.getElementById('crumb-subject');
+        var cur = document.getElementById('crumb-current');
+        if (subj) subj.textContent = (meta.course ? meta.course + ' · ' : '') + (meta.subject || 'Recurso');
+        if (cur) cur.textContent = meta.h1 || meta.title || 'Tema';
+        var btn = document.getElementById('theme-toggle');
+        if (!btn || !window.LuisLabTheme) return;
+        function sync() {
+          var dark = window.LuisLabTheme.get().resolved === 'dark';
+          btn.querySelector('.icon-sun').style.display = dark ? 'none' : 'block';
+          btn.querySelector('.icon-moon').style.display = dark ? 'block' : 'none';
+          btn.setAttribute('aria-label', dark ? 'Activar modo claro' : 'Activar modo oscuro');
+        }
+        btn.addEventListener('click', function () {
+          window.LuisLabTheme.toggle();
+          sync();
+        });
+        sync();
+      }
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initChrome);
+      } else {
+        initChrome();
+      }
+    })();
+  </script>
+  <!-- Inicialización segura del motor -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var app = document.getElementById('app');
+      function fail(title, desc) {
+        if (app) app.innerHTML = '<div class="empty"><div class="empty__icon">⚠️</div><h3 class="empty__title">' + title + '</h3><p class="empty__desc">' + desc + '</p></div>';
+      }
+      if (!window.STUDY_DATA) {
+        fail('No se han encontrado los datos del recurso', 'Asegúrate de que data-{{SLUG}}.js está en la misma carpeta y se carga sin errores.');
+        return;
+      }
+      if (!window.StudyEngine) {
+        fail('No se ha podido cargar el motor de estudio', 'Comprueba que ../shared/scripts/study-engine.js existe.');
+        return;
+      }
+      try {
+        window.StudyEngine.init('#app', window.STUDY_DATA);
+      } catch (err) {
+        fail('Error al iniciar el motor', err.message || String(err));
+        console.error(err);
+      }
+    });
+  </script>
+</body>
+</html>
