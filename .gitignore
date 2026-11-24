@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+
+# LibreOffice & Temp files
+*.tmp
+temp_*.docx
+temp_*.odt
+.~lock.*.odt#
+.~lock.*.docx#
+
+# OS & Editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*~
+
+# Local environment & secrets
+.env
+.env.local
