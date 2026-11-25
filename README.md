@@ -1,8 +1,12 @@
-# Kit Docente con IA · Starter Kit
+# Kit Docente con IA · Starter Kit 🇪🇸
 
-[![Release](https://img.shields.io/badge/version-v1.0.0-blue.svg)](https://github.com/luis/kit-docente-ia)
+[![Release](https://img.shields.io/badge/version-v1.0.0-blue.svg)](https://github.com/luisenberlin/kit-docente-ia)
 [![Libre, sin dependencias](https://img.shields.io/badge/LibreSinDependencias-100%25-success.svg)](#arquitectura)
+[![Languages: Spanish / English](https://img.shields.io/badge/docs-Espa%C3%B1ol%20%7C%20English-informational.svg)](README_EN.md)
 
+[🇬🇧 English version available](README_EN.md)
+
+---
 
 ## ¿Qué es?
 
@@ -19,7 +23,7 @@
 
 1. Clona el repositorio:
    ```bash
-   git clone https://github.com/luis/kit-docente-ia.git
+   git clone https://github.com/luisenberlin/kit-docente-ia.git
    cd kit-docente-ia
    ```
 2. Verifica tu entorno y dependencias:
