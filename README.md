@@ -1,6 +1,6 @@
 # Kit Docente con IA · Starter Kit 🇪🇸
 
-[![Release](https://img.shields.io/badge/version-v1.0.0-blue.svg)](https://github.com/luisenberlin/kit-docente-ia)
+[![Release](https://img.shields.io/badge/version-v1.0.0-blue.svg)](https://github.com/luisenberlin/kit-docente-ia/releases/tag/v1.0.0)
 [![Libre, sin dependencias](https://img.shields.io/badge/LibreSinDependencias-100%25-success.svg)](#arquitectura)
 [![Languages: Spanish / English](https://img.shields.io/badge/docs-Espa%C3%B1ol%20%7C%20English-informational.svg)](README_EN.md)
 
@@ -22,6 +22,13 @@
 - **Diseña exámenes imprimibles en ODT** equilibrados por niveles DOK y criterios del currículo oficial.
 - **Crea informes y hojas de refuerzo personalizadas** tras la corrección.
 - Sin dependencias ni instalación complicada: HTML/CSS/JS puro, compatible con cualquier ordenador y navegador.
+
+---
+
+## 🤖 Compatibilidad con Agentes de IA
+
+Las habilidades (`skills/`) incluidas en este kit están diseñadas y probadas rigurosamente en **OpenCode**, y son totalmente compatibles con **Claude Code** u otros arneses de agentes de IA compatibles con skills estructuradas. 
+Al invocar comandos como `/crear-recurso`, `/crear-examen` o `/informe-examen`, el agente lee automáticamente las referencias normativas (`normativa/`) y ejecuta los flujos correspondientes.
 
 ---
 

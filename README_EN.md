@@ -1,6 +1,6 @@
 # AI Teaching Kit · Starter Kit 🇬🇧
 
-[![Release](https://img.shields.io/badge/version-v1.0.0-blue.svg)](https://github.com/luisenberlin/kit-docente-ia)
+[![Release](https://img.shields.io/badge/version-v1.0.0-blue.svg)](https://github.com/luisenberlin/kit-docente-ia/releases/tag/v1.0.0)
 [![License: MIT](https://img.shields.io/badge/License-MIT-success.svg)](LICENSE)
 [![Languages: Spanish / English](https://img.shields.io/badge/docs-English%20%7C%20Espa%C3%B1ol-informational.svg)](README.md)
 
@@ -22,6 +22,13 @@
 - **Design printable ODT exams** balanced by DOK (Depth of Knowledge) cognitive levels and official curriculum criteria.
 - **Generate student performance reports and tailored reinforcement sheets** after grading.
 - **Zero bloat, zero dependencies**: Pure HTML/CSS/JS, fully offline-capable, runs on any computer and browser.
+
+---
+
+## 🤖 AI Agent Compatibility
+
+The AI skills (`skills/`) included in this kit are designed and rigorously tested in **OpenCode**, and are fully compatible with **Claude Code** or similar structured AI agent harnesses.  
+When invoking commands like `/crear-recurso`, `/crear-examen`, or `/informe-examen`, the agent automatically reads the curriculum references (`normativa/`) and executes the corresponding workflows.
 
 ---
 
