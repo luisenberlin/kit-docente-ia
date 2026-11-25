@@ -8,6 +8,12 @@
 
 ---
 
+<p align="center">
+  <img src="assets/kit-preview.svg" alt="Kit Docente con IA - Vista previa del Hub Interactivo" width="100%">
+</p>
+
+---
+
 ## ¿Qué es?
 
 **Kit Docente con IA** es un starter kit de código abierto para generar recursos interactivos de estudio, exámenes imprimibles y diagnósticos personalizados con IA, dirigido a docentes y familias, sin necesidad de programación ni configuraciones técnicas.

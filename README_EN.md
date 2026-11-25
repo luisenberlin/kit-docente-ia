@@ -8,6 +8,12 @@
 
 ---
 
+<p align="center">
+  <img src="assets/kit-preview.svg" alt="AI Teaching Kit - Interactive Hub Preview" width="100%">
+</p>
+
+---
+
 ## What is it?
 
 **AI Teaching Kit** is an open-source starter kit for educators and parents to generate interactive study resources, printable exams, and personalized student reports using AI. No programming or complex technical setup required.
