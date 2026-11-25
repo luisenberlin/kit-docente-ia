@@ -19,6 +19,22 @@
 
 ---
 
+## 🔄 Flujo de Trabajo del Kit
+
+```mermaid
+graph TD
+    A[Apuntes / PDF / Temario] -->|"/crear-recurso"| B(Web Interactiva de Estudio<br/>6 Modos: Test, Tarjetas, Examen...)
+    C[Programación normativa/MD] -->|"/crear-examen"| D(Exámenes ODT & Solucionario<br/>Graduados por Niveles DOK)
+    D --> E[Corrección del Alumnado]
+    E -->|"/informe-examen"| F(Informes de clase &<br/>Hojas de Refuerzo Personalizadas)
+
+    style B fill:#0D9488,stroke:#fff,stroke-width:2px,color:#fff
+    style D fill:#2563EB,stroke:#fff,stroke-width:2px,color:#fff
+    style F fill:#9333EA,stroke:#fff,stroke-width:2px,color:#fff
+```
+
+---
+
 ## Instalación y requisitos
 
 1. Clona el repositorio:

@@ -19,6 +19,22 @@
 
 ---
 
+## 🔄 Workflow Overview
+
+```mermaid
+graph TD
+    A[Notes / PDF / Syllabus] -->|"/crear-recurso"| B(Interactive Study Web<br/>6 Modes: Quiz, Flashcards, Exam...)
+    C[Curriculum rules / MD] -->|"/crear-examen"| D(ODT Exams & Answer Keys<br/>Balanced by DOK Levels)
+    D --> E[Student Assessment]
+    E -->|"/informe-examen"| F(Class Reports &<br/>Tailored Reinforcement Sheets)
+
+    style B fill:#0D9488,stroke:#fff,stroke-width:2px,color:#fff
+    style D fill:#2563EB,stroke:#fff,stroke-width:2px,color:#fff
+    style F fill:#9333EA,stroke:#fff,stroke-width:2px,color:#fff
+```
+
+---
+
 ## Installation & Requirements
 
 1. Clone the repository:
