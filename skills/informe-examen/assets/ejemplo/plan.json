@@ -1,0 +1,275 @@
+{
+ "titulo": "Examen Tema 1 (UD1, sin potencias ni raíces)",
+ "asignatura": "Matemáticas Nivel I",
+ "centro": "CEPA Sierra Norte",
+ "contenidos": {
+  "C1": "Estrategias de conteo en problemas",
+  "C2": "Números naturales: lectura, valor posicional y orden",
+  "C3": "Operaciones con naturales (con división con resto)",
+  "C4": "Prioridad de operaciones y paréntesis",
+  "C7": "Resolución de problemas cotidianos"
+ },
+ "criterios": {
+  "1.1": "1.1 Interpretar y organizar los datos",
+  "1.2": "1.2 Aplicar estrategias de resolución",
+  "2.2": "2.2 Representar con operaciones",
+  "6.1": "6.1 Comprobar el sentido de las soluciones"
+ },
+ "apartados": [
+  {
+   "id": "1a",
+   "puntos": 0.25,
+   "contenido_corto": "Escritura de números",
+   "contenidos": [
+    "C2"
+   ],
+   "criterios": [
+    "1.1"
+   ]
+  },
+  {
+   "id": "1b",
+   "puntos": 0.25,
+   "contenido_corto": "Valor posicional",
+   "contenidos": [
+    "C2"
+   ],
+   "criterios": [
+    "1.1"
+   ]
+  },
+  {
+   "id": "1c",
+   "puntos": 0.5,
+   "contenido_corto": "Comparar y ordenar",
+   "contenidos": [
+    "C2"
+   ],
+   "criterios": [
+    "1.1"
+   ]
+  },
+  {
+   "id": "2a",
+   "puntos": 0.5,
+   "contenido_corto": "Jerarquía de operaciones",
+   "contenidos": [
+    "C3",
+    "C4"
+   ],
+   "criterios": [
+    "1.2"
+   ]
+  },
+  {
+   "id": "2b",
+   "puntos": 0.5,
+   "contenido_corto": "Paréntesis y jerarquía",
+   "contenidos": [
+    "C3",
+    "C4"
+   ],
+   "criterios": [
+    "1.2"
+   ]
+  },
+  {
+   "id": "3a",
+   "puntos": 0.5,
+   "contenido_corto": "Efecto de los paréntesis",
+   "contenidos": [
+    "C4"
+   ],
+   "criterios": [
+    "1.2",
+    "6.1"
+   ]
+  },
+  {
+   "id": "3b",
+   "puntos": 0.5,
+   "contenido_corto": "Colocar paréntesis",
+   "contenidos": [
+    "C4"
+   ],
+   "criterios": [
+    "1.2",
+    "6.1"
+   ]
+  },
+  {
+   "id": "4a",
+   "puntos": 0.5,
+   "contenido_corto": "Plantear con paréntesis",
+   "contenidos": [
+    "C3",
+    "C4",
+    "C7"
+   ],
+   "criterios": [
+    "1.1",
+    "2.2"
+   ]
+  },
+  {
+   "id": "4b",
+   "puntos": 0.5,
+   "contenido_corto": "Resolver y responder",
+   "contenidos": [
+    "C3",
+    "C7"
+   ],
+   "criterios": [
+    "1.2",
+    "6.1"
+   ]
+  },
+  {
+   "id": "5a",
+   "puntos": 0.5,
+   "contenido_corto": "Multiplicar (problema)",
+   "contenidos": [
+    "C3",
+    "C7"
+   ],
+   "criterios": [
+    "1.1",
+    "1.2"
+   ]
+  },
+  {
+   "id": "5b",
+   "puntos": 0.5,
+   "contenido_corto": "Restar (problema)",
+   "contenidos": [
+    "C3",
+    "C7"
+   ],
+   "criterios": [
+    "1.2"
+   ]
+  },
+  {
+   "id": "5c",
+   "puntos": 0.5,
+   "contenido_corto": "Dividir (problema)",
+   "contenidos": [
+    "C1",
+    "C3",
+    "C7"
+   ],
+   "criterios": [
+    "1.2",
+    "6.1"
+   ]
+  },
+  {
+   "id": "6a",
+   "puntos": 0.5,
+   "contenido_corto": "División con resto",
+   "contenidos": [
+    "C1",
+    "C3",
+    "C7"
+   ],
+   "criterios": [
+    "1.1",
+    "1.2"
+   ]
+  },
+  {
+   "id": "6b",
+   "puntos": 0.5,
+   "contenido_corto": "Interpretar el resto",
+   "contenidos": [
+    "C3",
+    "C7"
+   ],
+   "criterios": [
+    "6.1"
+   ]
+  },
+  {
+   "id": "7a",
+   "puntos": 0.5,
+   "contenido_corto": "Dos formas de calcular",
+   "contenidos": [
+    "C3",
+    "C4"
+   ],
+   "criterios": [
+    "1.2",
+    "6.1"
+   ]
+  },
+  {
+   "id": "7b",
+   "puntos": 0.5,
+   "contenido_corto": "Inventar un problema",
+   "contenidos": [
+    "C4",
+    "C7"
+   ],
+   "criterios": [
+    "1.1",
+    "2.2"
+   ]
+  },
+  {
+   "id": "7c",
+   "puntos": 0.5,
+   "contenido_corto": "Justificar la jerarquía",
+   "contenidos": [
+    "C4"
+   ],
+   "criterios": [
+    "1.2",
+    "6.1"
+   ]
+  },
+  {
+   "id": "8a",
+   "puntos": 0.5,
+   "contenido_corto": "Coste total (varias op.)",
+   "contenidos": [
+    "C3",
+    "C4",
+    "C7"
+   ],
+   "criterios": [
+    "1.1",
+    "2.2"
+   ]
+  },
+  {
+   "id": "8b",
+   "puntos": 0.5,
+   "contenido_corto": "Comparar y repartir",
+   "contenidos": [
+    "C3",
+    "C7"
+   ],
+   "criterios": [
+    "1.2",
+    "6.1"
+   ]
+  },
+  {
+   "id": "8c",
+   "puntos": 1.0,
+   "contenido_corto": "Decidir y justificar",
+   "contenidos": [
+    "C1",
+    "C3",
+    "C4",
+    "C7"
+   ],
+   "criterios": [
+    "1.1",
+    "1.2",
+    "2.2",
+    "6.1"
+   ]
+  }
+ ]
+}

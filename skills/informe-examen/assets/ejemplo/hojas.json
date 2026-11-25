@@ -1,0 +1,130 @@
+{
+ "unidad": {
+  "es": "Tema 1: Los números naturales",
+  "en": "Unit 1: Natural numbers"
+ },
+ "asignatura": "Matemáticas Nivel I",
+ "centro": "CEPA Sierra Norte",
+ "cabecera": {
+  "es": "Matemáticas Nivel I · CEPA Sierra Norte",
+  "en": "Mathematics Level I · CEPA Sierra Norte"
+ },
+ "alumnos": [
+  {
+   "nombre": "Dayana",
+   "idioma": "es",
+   "tipo": "refuerzo",
+   "ya": "los números naturales",
+   "vamos": "la división con resto",
+   "ejercicios": [
+    {
+     "titulo": "Divisiones con resto",
+     "intro": "Un autobús escolar tiene 42 plazas y hay 190 alumnos para una excursión.",
+     "partes": [
+      {
+       "texto": "¿Cuántos autobuses se llenan del todo? ¿Cuántos alumnos se quedan sin plaza?",
+       "lineas": 3,
+       "solucion": "190 ÷ 42 = 4 y resto 22"
+      },
+      {
+       "texto": "Hay que llevar a **todos** los alumnos. ¿Cuántos autobuses hacen falta? **Explica** por qué.",
+       "lineas": 3,
+       "pista": "¿Qué haces con los alumnos que se quedan sin plaza?",
+       "solucion": "5 autobuses"
+      }
+     ]
+    },
+    {
+     "titulo": "Elegir la mejor opción",
+     "intro": "Un grupo de 20 personas puede elegir entre dos opciones:",
+     "tabla": [
+      [
+       "Opción",
+       "Qué se alquila",
+       "Coste"
+      ],
+      [
+       "A",
+       "Furgonetas de 5 plazas",
+       "30 € + 10 € por furgoneta"
+      ],
+      [
+       "B",
+       "1 autobús",
+       "110 € + 35 €"
+      ]
+     ],
+     "partes": [
+      {
+       "texto": "Calcula el **coste total** de cada opción.",
+       "lineas": 3,
+       "solucion": "A: 160 €; B: 145 €"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "nombre": "Awa",
+   "idioma": "en",
+   "tipo": "refuerzo",
+   "ya": "natural numbers",
+   "vamos": "division with remainders",
+   "ejercicios": [
+    {
+     "titulo": "Division with remainders",
+     "intro": "A school bus has 42 seats and there are 190 students going on a trip.",
+     "partes": [
+      {
+       "texto": "How many buses are completely filled? How many students are left without a seat?",
+       "lineas": 3,
+       "solucion": "190 ÷ 42 = 4 remainder 22"
+      },
+      {
+       "texto": "All the students must go. How many buses are needed? **Explain** why.",
+       "lineas": 3,
+       "pista": "What do you do with the students who are left without a seat?",
+       "solucion": "5 buses"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "nombre": "Nallely",
+   "idioma": "es",
+   "tipo": "ampliacion",
+   "vamos": "problemas de más pasos",
+   "ejercicios": [
+    {
+     "titulo": "Elegir la mejor opción",
+     "intro": "Un grupo de 20 personas puede elegir entre dos opciones:",
+     "tabla": [
+      [
+       "Opción",
+       "Qué se alquila",
+       "Coste"
+      ],
+      [
+       "A",
+       "Furgonetas de 5 plazas",
+       "30 € + 10 € por furgoneta"
+      ],
+      [
+       "B",
+       "1 autobús",
+       "110 € + 35 €"
+      ]
+     ],
+     "partes": [
+      {
+       "texto": "Calcula el **coste total** de cada opción.",
+       "lineas": 3,
+       "solucion": "A: 160 €; B: 145 €"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

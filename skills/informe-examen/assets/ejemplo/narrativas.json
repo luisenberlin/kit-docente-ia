@@ -1,0 +1,21 @@
+{
+ "grupo": {
+  "lectura": [
+   "Todos dominan los números naturales (1a–1c, 100 %).",
+   "Punto débil común: división con resto (6a, 6b), inventar un problema (7b) y decidir (8c).",
+   "Dos perfiles: Nallely y Rubén (9,75–10) y cuatro alumnos entre 4,5 y 5,75."
+  ]
+ },
+ "alumnos": {
+  "Dayana": {
+   "domina": "Números naturales y problemas de un paso.",
+   "refuerzo": "Jerarquía, división con resto, inventar y decidir.",
+   "hoja": "Refuerzo."
+  },
+  "Nallely": {
+   "domina": "Todo el examen.",
+   "refuerzo": "Nada que reforzar.",
+   "hoja": "Ampliación."
+  }
+ }
+}
