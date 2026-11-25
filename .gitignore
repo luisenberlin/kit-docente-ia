@@ -1,28 +1,18 @@
-# Python
+# Python cache
 __pycache__/
 *.py[cod]
 *$py.class
-*.so
-.Python
-env/
-venv/
-.venv/
 
-# LibreOffice & Temp files
-*.tmp
-temp_*.docx
-temp_*.odt
-.~lock.*.odt#
-.~lock.*.docx#
-
-# OS & Editors
+# Entorno local y secretos
+.env
 .DS_Store
-Thumbs.db
+
+# Archivos temporales de sistema
+*~
 .vscode/
 .idea/
-*.swp
-*~
 
-# Local environment & secrets
-.env
-.env.local
+# Nota: Dejamos examenes/ e informes/ con .gitkeep o permitidos si se quieren versionar ejemplos,
+# pero excluimos archivos temporales generados
+examenes/*.docx
+informes/*.docx
