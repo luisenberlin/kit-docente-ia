@@ -1,4 +1,17 @@
 {
-  "updated": "2026-11-24",
-  "recursos": []
+  "updated": "2026-11-25",
+  "recursos": [
+    {
+      "id": "atomo-y-materia",
+      "title": "El Átomo y la Materia",
+      "description": "Propiedades de la materia, teoría cinético-molecular, modelos atómicos y sistema periódico.",
+      "course": "3º ESO",
+      "subject": "Física y Química",
+      "color": "#0D9488",
+      "icon": "atom",
+      "path": "contenidos/atomo-y-materia.html",
+      "tags": ["Física", "Química", "ESO"],
+      "date": "2026-11-25"
+    }
+  ]
 }

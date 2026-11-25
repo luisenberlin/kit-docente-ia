@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>El Átomo y la Materia · Kit Docente con IA</title>
+  <script>
+    (function() {
+      try {
+        var theme = localStorage.getItem('kitdocente:theme') || 'auto';
+        var root = document.documentElement;
+        if (theme === 'dark' || (theme === 'auto' && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+          root.setAttribute('data-theme', 'dark');
+        } else {
+          root.setAttribute('data-theme', 'light');
+        }
+      } catch (e) {}
+    })();
+  </script>
+  <link rel="stylesheet" href="../shared/styles/study.css">
+  <style>
+    :root {
+      --subject-color: #0D9488;
+      --subject-ink: #FFFFFF;
+    }
+  </style>
+</head>
+<body>
+  <header class="sitebar">
+    <nav class="crumbs" aria-label="Navegación">
+      <a href="../index.html">Inicio</a><span class="crumbs__sep">/</span>
+      <span id="crumb-level">3º ESO</span><span class="crumbs__sep">/</span>
+      <span id="crumb-current" aria-current="page">El Átomo y la Materia</span>
+    </nav>
+    <button id="theme-toggle" class="themebtn" type="button" aria-label="Cambiar tema">
+      🌓
+    </button>
+  </header>
+
+  <div id="app"></div>
+
+  <script src="data-atomo-y-materia.js"></script>
+  <script src="../shared/scripts/study-engine.js"></script>
+  <script src="../shared/scripts/theme.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      if (window.StudyEngine && window.STUDY_DATA) {
+        window.StudyEngine.init('#app', window.STUDY_DATA);
+      }
+    });
+  </script>
+</body>
+</html>
